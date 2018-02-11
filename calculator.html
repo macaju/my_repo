@@ -12,9 +12,16 @@ num.value = Math.pow(num.value, 3);
 
 }
 
-function sin() {
+function  powerOf4() {
 
 var num = document.getElementById("n2");
+
+num.value = Math.pow(num.value, 4);
+}
+
+function sin() {
+
+var num = document.getElementById("n3");
 
 num.value = Math.sin(num.value);
 
@@ -37,7 +44,12 @@ Number:
 Number:
 
 <input type="text" id="n2"><p>
+<button onclick="powerOf4()"> x^4 </button>
 
+<p>
+Number:
+
+<input type="text" id="n3"><p>
 <button onclick="sin()"> sin(x) </button>
 
 </body>
